@@ -4,7 +4,9 @@ const router = express.Router();
 const Players = require('../models/players');
 
 router.get('/players', (req, res) => {
-    res.send(Players);
-})
+    res.render('index.ejs', {
+        players: Players,
+    })
+});
 
 module.exports = router;

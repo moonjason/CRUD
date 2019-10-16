@@ -7,6 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Hello</h1>
+    <h1>Player Index Page</h1>
+    <ul>
+        <% for (let i = 0; i < players.length; i++) { %>
+            <li><%=players[i].name%></li>
+        <% } %>
+    </ul>
 </body>
 </html>
