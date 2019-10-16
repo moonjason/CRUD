@@ -11,6 +11,9 @@
     <ul>
         <% for (let i = 0; i < players.length; i++) { %>
             <li><%=players[i].name%></li>
+            <form action="/players/<%=i;%>?_method=DELETE" method="POST">
+                <button>Del</button>
+            </form>
         <% } %>
     </ul>
 </body>
